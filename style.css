@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: auto; /* Cambia a altura automática para que se ajuste según el contenido */
+    padding: 10px; /* Añade padding para que el contenido no esté pegado al borde */
+}
+
+header a {
+    color: white;
+    border: 3px solid white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px; /* Ajusta el padding para hacerlo más adecuado a diferentes tamaños */
+    border-radius: 20px;
+    text-decoration: none; /* Asegura que los enlaces no tengan subrayado */
+}
+
+/* Media Queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    header a {
+        padding: 10px 15px; /* Reduce el padding en pantallas más pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    header {
+        padding: 15px; /* Reduce el padding en el header también */
+    }
+}
+
+@media (max-width: 480px) {
+    header a {
+        padding: 8px 10px; /* Reduce aún más el padding en pantallas pequeñas */
+        font-size: 12px; /* Reduce el tamaño de la fuente aún más */
+    }
+
+    header {
+        padding: 10px; /* Ajusta el padding del header */
+    }
+}
+.baner{
+    padding-top: 10px;
+}
+img{
+    width: 100%;
+}
+#peli{
+    transition: 0.5s;
+    object-fit: cover;
+}
+#peli:hover{
+    transform: scale(1.1);
+}
+a:hover{
+    box-shadow: 0 0 10px orange,
+                0 0 30px orange,
+                0 0 60px orange,
+                0 0 250px orange;
+}
